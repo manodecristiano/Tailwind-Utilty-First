@@ -3,22 +3,15 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="w-3 h-5" alt="logo" />
-        <p className='text-green-300'>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="flex max-w-sm my-0 ms-auto p-6 rounded-lg bg-white shadow-xl">
+    <div class="chat-notification-logo-wrapper">
+     <img src={logo} className="w-14 h-14" alt="logo" />
     </div>
+  <div class="chat-notification-content">
+    <h4 class="chat-notification-title">ChitChat</h4>
+    <p class="chat-notification-message">You have a new message!</p>
+  </div>
+</div>
   );
 }
 
