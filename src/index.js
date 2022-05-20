@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-
+import Chitchat from './components/Notification/Chitchat.js';
+import Button from './components/Notification/Button.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const handleClick = () => {
+  document.documentElement.classList.toogle('dark');
+}
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Chitchat />
+    <Button onclick={handleClick}/>
   </React.StrictMode>
 );
 

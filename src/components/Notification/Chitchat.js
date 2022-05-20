@@ -1,10 +1,11 @@
-import logo from './img/bubble.svg';
-import './App.css';
+import logo from '../../img/bubble.svg';
+import '../../index.css';
 
-function App() {
+
+function Chitchat() {
   return (
-    
-  <div className="flex max-w-sm my-0 ms-auto p-6 rounded-lg bg-white shadow-xl">
+
+  <div className="flex max-w-sm my-0 ms-auto p-6 rounded-lg bg-white shadow-xl items-center ">
     <div class="flex-shrink-0 "> 
      <img src={logo} className="w-14 h-14" alt="logo" />
     </div>
@@ -17,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default Chitchat;
